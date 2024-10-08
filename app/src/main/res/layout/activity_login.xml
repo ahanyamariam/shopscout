@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#130C1E"
+    android:padding="24dp">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello,\nWelcome"
+        android:textSize="36sp"
+        android:textColor="#F5E1E1"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="username"
+        android:background="@android:color/transparent"
+        android:textColor="#F5E1E1"
+        android:textColorHint="#F5E1E1"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"
+        android:drawableTint="#F5E1E1"
+        android:layout_gravity="center"/>
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="password"
+        android:background="@android:color/transparent"
+        android:textColor="#F5E1E1"
+        android:textColorHint="#F5E1E1"
+        android:layout_marginBottom="32dp"
+        android:inputType="textPassword"
+        android:drawableTint="#F5E1E1"
+        android:layout_gravity="center"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#F47C3C"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:drawableTint="#FFFFFF"/>
+</LinearLayout>
