@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ShopScout</string>
+    <string name="fruits">Fruits</string>
+    <string name="vegetables">Vegetables</string>
+    <string name="meat">Meat</string>
+    <string name="seafood">Seafood</string>
+    <string name="toiletries">Toiletries</string>
+    <string name="cleaning_supplies">Cleaning Supplies</string>
 </resources>

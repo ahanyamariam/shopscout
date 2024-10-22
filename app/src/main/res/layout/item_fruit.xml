@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- ImageView for the fruit image -->
+    <ImageView
+        android:id="@+id/fruitImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Fruit Image" />
+
+    <!-- TextView for the fruit name -->
+    <TextView
+        android:id="@+id/productName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fruit Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="4dp" />
+
+    <!-- TextView for the fruit price -->
+    <TextView
+        android:id="@+id/productPrice1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="₹0.0"
+        android:textSize="16sp"
+        android:paddingTop="2dp" />
+
+    <!-- TextView for the fruit description -->
+    <TextView
+        android:id="@+id/fruitDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fruit description goes here"
+        android:textSize="14sp"
+        android:paddingTop="2dp" />
+</LinearLayout>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="@font/a_fatface"
+    android:background="#FFFFFF">
+    <!-- ComposeView for the Top Navigation Bar -->
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/TopNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/TopNavigationBar"
+        android:layout_above="@id/bottom_navigation_bar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- GridLayout for Category Cards -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardFruits"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#EED1AF"
+                    app:cardCornerRadius="25dp"
+                    android:layout_columnWeight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"/>
+
+                    <!-- Text for category name -->
+                    <TextView
+                        android:id="@+id/tvCategoryName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fruits"
+                        android:fontFamily="@font/a_fatface"
+                        android:textSize="18sp"
+                        android:textColor="#FF000000"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <!-- Text for number of items -->
+                    <TextView
+                        android:id="@+id/tvItemCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="121 items"
+                        android:fontFamily="@font/a_fatface"
+                        android:textSize="14sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_below="@id/tvCategoryName"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="8dp"/>
+
+                    <!-- Image in the center -->
+                    <ImageView
+                        android:id="@+id/ivFruitBasket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fruitbasket"
+                        android:layout_marginTop="30dp"/>
+
+                </androidx.cardview.widget.CardView>
+>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardVegetables"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#83B198"
+                    app:cardCornerRadius="25dp"
+                    android:layout_columnWeight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <!-- Text for category name -->
+                        <TextView
+                            android:id="@+id/tvVegetableCategory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vegetables"
+                            android:fontFamily="@font/a_fatface"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <!-- Text for number of items -->
+                        <TextView
+                            android:id="@+id/tvVegetableItemCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100 items"
+                            android:fontFamily="@font/a_fatface"
+                            android:textSize="14sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_below="@id/tvVegetableCategory"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"/>
+
+                        <!-- Image in the center -->
+                        <ImageView
+                            android:id="@+id/ivVegetableImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/veg"
+                            android:layout_marginTop="40dp"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMeat"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#E7B1AE"
+                    app:cardCornerRadius="25dp"
+                    android:layout_columnWeight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <!-- Text for category name -->
+                        <TextView
+                            android:id="@+id/tvMeatCategoryName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Meat"
+                            android:fontFamily="@font/a_fatface"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <!-- Text for number of items -->
+                        <TextView
+                            android:id="@+id/tvMeatItemCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/a_fatface"
+                            android:text="90 items"
+                            android:textSize="14sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_below="@id/tvMeatCategoryName"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginStart="8dp"/>
+
+                        <!-- Image for meat -->
+                        <ImageView
+                            android:id="@+id/ivMeatImage"
+                            android:layout_width="158dp"
+                            android:layout_height="132dp"
+                            android:layout_marginTop="40dp"
+                            android:src="@drawable/meat" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSeafood"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#9BB1E4"
+                    app:cardCornerRadius="25dp"
+                    android:layout_columnWeight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <!-- Text for category name -->
+                        <TextView
+                            android:id="@+id/tvSeafoodCategoryName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Seafood"
+                            android:fontFamily="@font/a_fatface"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <!-- Text for number of items -->
+                        <TextView
+                            android:id="@+id/tvSeafoodItemCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="70 items"
+                            android:fontFamily="@font/a_fatface"
+                            android:textSize="14sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_below="@id/tvSeafoodCategoryName"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginStart="8dp"/>
+
+                        <!-- Image for seafood -->
+                        <ImageView
+                            android:id="@+id/ivSeafoodImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/seafood"
+                            android:layout_marginTop="40dp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardBeverages"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#E0DBFF"
+                    app:cardCornerRadius="25dp"
+                    android:layout_columnWeight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <!-- Text for category name -->
+                        <TextView
+                            android:id="@+id/tvBeverages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beverages"
+                            android:fontFamily="@font/a_fatface"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp" />
+
+                        <!-- Text for number of items -->
+                        <TextView
+                            android:id="@+id/tvBevsItemcount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="70 items"
+                            android:fontFamily="@font/a_fatface"
+                            android:textSize="14sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_below="@id/tvBeverages"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginStart="8dp" />
+
+                        <!-- Image for meat -->
+                        <ImageView
+                            android:id="@+id/ivDrinksImage"
+                            android:layout_width="158dp"
+                            android:layout_height="132dp"
+                            android:layout_marginTop="50dp"
+                            android:src="@drawable/drinks" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardGrains"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#A77B6E"
+                    app:cardCornerRadius="25dp"
+                    android:layout_columnWeight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <!-- Text for category name -->
+                        <TextView
+                            android:id="@+id/tvGrains"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Grains"
+                            android:fontFamily="@font/a_fatface"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp" />
+
+                        <!-- Text for number of items -->
+                        <TextView
+                            android:id="@+id/tvGrainsItemcount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="70 items"
+                            android:fontFamily="@font/a_fatface"
+                            android:textSize="14sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_below="@id/tvGrains"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginStart="8dp" />
+
+                        <!-- Image for meat -->
+                        <ImageView
+                            android:id="@+id/ivGrainsImage"
+                            android:layout_width="158dp"
+                            android:layout_height="132dp"
+                            android:layout_marginTop="50dp"
+                            android:src="@drawable/grains" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardHome"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#D3AACB"
+                    app:cardCornerRadius="25dp"
+                    android:layout_columnWeight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <!-- Text for category name -->
+                        <TextView
+                            android:id="@+id/tvHome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Home"
+                            android:fontFamily="@font/a_fatface"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp" />
+
+                        <!-- Text for number of items -->
+                        <TextView
+                            android:id="@+id/tvHomeItemCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="70 items"
+                            android:fontFamily="@font/a_fatface"
+                            android:textSize="14sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_below="@id/tvHome"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginStart="8dp" />
+
+                        <!-- Image for meat -->
+                        <ImageView
+                            android:id="@+id/ivHomeImage"
+                            android:layout_width="158dp"
+                            android:layout_height="132dp"
+                            android:layout_marginTop="50dp"
+                            android:src="@drawable/supplies" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Include the bottom navigation bar -->
+    <include
+        layout="@layout/bottom_navigation_bar"
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#130C1E"
+        android:elevation="4dp"
+        android:clipToPadding="false" />
+
+</RelativeLayout>

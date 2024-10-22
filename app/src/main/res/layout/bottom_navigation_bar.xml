@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="#130C1E"
+    android:gravity="center">
+
+    <!-- Placeholder for Icons -->
+    <ImageView
+        android:id="@+id/iconHome"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/home"/><!-- Replace with your own icon -->
+
+    <ImageView
+        android:id="@+id/iconProducts"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/box"/>
+
+    <ImageView
+        android:id="@+id/iconCart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/cart"/>
+
+    <ImageView
+        android:id="@+id/iconProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/user"/>
+    <ImageView
+        android:id="@+id/nav_add_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="Add Data"
+        android:layout_margin="16dp"/>
+
+
+
+
+</LinearLayout>

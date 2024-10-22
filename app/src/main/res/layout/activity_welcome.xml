@@ -5,34 +5,27 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="#130C1E"
+    android:fontFamily="@font/a_fatface"
     android:padding="24dp">
 
     <!-- Logo Image -->
-    <ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo"
-        android:layout_marginBottom="32dp"/>
 
     <!-- App Name -->
-    <TextView
-        android:id="@+id/appNameTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ShopScout"
-        android:textSize="36sp"
-        android:textColor="#F47C3C"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="40dp"/>
 
     <!-- Login Button -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="284dp"
+        android:layout_height="297dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/logo" />
+
     <Button
         android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
+        android:fontFamily="@font/a_fatface"
         android:textColor="#FFFFFF"
         android:backgroundTint="#F47C3C"
         android:padding="12dp"
@@ -45,10 +38,11 @@
         android:id="@+id/signUpButton"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#F5E1E1"
+        android:fontFamily="@font/a_fatface"
+        android:padding="12dp"
         android:text="Sign Up"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#F5E1E1"
-        android:padding="12dp"
-        android:layout_gravity="center"
-        android:textSize="18sp"/>
+        android:textSize="12sp" />
 </LinearLayout>

@@ -1,9 +1,18 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.ShopScout" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+    <!-- Custom Text Appearance for A_Fatface Font -->
+    <style name="Theme.ShopScout" parent="Theme.AppCompat.NoActionBar"/>
+    <style name="AFatfaceTextAppearance">
+        <item name="android:fontFamily">@font/a_fatface</item>
     </style>
 
-    <style name="Theme.ShopScout" parent="Base.Theme.ShopScout" />
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Apply the custom text appearance to all TextViews -->
+        <item name="android:textAppearance">@style/AFatfaceTextAppearance</item>
+
+        <!-- Other theme-related items -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
 </resources>

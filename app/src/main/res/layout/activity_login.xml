@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="#130C1E"
+    android:fontFamily="@font/a_fatface"
     android:padding="24dp">
 
     <!-- Welcome Text -->
@@ -13,7 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello,\nWelcome"
-        android:textSize="36sp"
+        android:fontFamily="@font/a_fatface"
+        android:textSize="55dp"
         android:textColor="#F5E1E1"
         android:textStyle="bold"
         android:gravity="center"
@@ -25,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="username"
+        android:fontFamily="@font/a_fatface"
         android:background="@android:color/transparent"
         android:textColor="#F5E1E1"
         android:textColorHint="#F5E1E1"
@@ -39,6 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="password"
+        android:fontFamily="@font/a_fatface"
         android:background="@android:color/transparent"
         android:textColor="#F5E1E1"
         android:textColorHint="#F5E1E1"
@@ -53,6 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
+        android:fontFamily="@font/a_fatface"
         android:textColor="#FFFFFF"
         android:backgroundTint="#F47C3C"
         android:padding="12dp"

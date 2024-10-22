@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "402847033062",
+    "project_id": "shopscout-2b58c",
+    "storage_bucket": "shopscout-2b58c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402847033062:android:b143437eed2666a062bd27",
+        "android_client_info": {
+          "package_name": "com.example.shopscout"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA10yMXXU_B4-CR8WnNXc87bOPQMUaVZVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
